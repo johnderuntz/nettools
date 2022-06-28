@@ -36,7 +36,7 @@ if __name__ == "__main__":
         print("Please select an option:")
         print("1. Backup Config")
         print("2. Add new VLAN")
-        print("3. Enable Trunking on a port")
+        print("3. Switch VLAN based on MAC address")
         print("4. Exit")
         print("-------------------------------")
         selection = input("Input: ")
