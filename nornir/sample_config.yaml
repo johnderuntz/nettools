@@ -1,0 +1,9 @@
+inventory:
+      plugin: ExcelInventory
+      options:
+          excel_file: "inventory.xlsx"
+
+runner:
+  plugin: threaded
+  options:
+    num_workers: 20
