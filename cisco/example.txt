@@ -1,0 +1,100 @@
+-------------------------------
+        START OF SCRIPT
+-------------------------------
+IP: 192.168.1.36
+Enter Useranme: jackderuntz
+Enter Password: 
+Enter Secret. If none hit enter:
+
+-------------------------------
+Please select an option:
+1. Backup Config
+2. Add new VLAN
+3. Switch VLAN based on MAC address
+4. Exit
+-------------------------------
+Input: 1
+Attempting connection to: 192.168.1.36
+Connection Successful!
+Backing up Switch Configuration
+Executing 'show run' command...
+Outputted to 192.168.1.36_06-28-2022_08-57.bkp!
+
+-------------------------------
+Please select an option:
+1. Backup Config
+2. Add new VLAN
+3. Switch VLAN based on MAC address
+4. Exit
+-------------------------------
+Input: 2
+Attempting connection to: 192.168.1.36
+Connection Successful!
+Enter the VLAN ID you wish to add: 37
+Enter the VLAN Name: VLAN0037
+Adding VLAN 37 to 192.168.1.36
+VLAN Added
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0
+37   enet  100037     1500  -      -      -        -    -        0      0
+48   enet  100048     1500  -      -      -        -    -        0      0
+50   enet  100050     1500  -      -      -        -    -        0      0
+51   enet  100051     1500  -      -      -        -    -        0      0
+1002 fddi  101002     1500  -      -      -        -    -        0      0
+1003 tr    101003     1500  -      -      -        -    -        0      0
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+-------------------------------
+Please select an option:
+1. Backup Config
+2. Add new VLAN
+3. Switch VLAN based on MAC address
+4. Exit
+-------------------------------
+Input: 3
+Attempting connection to: 192.168.1.36
+Connection Successful!
+
+Vendor MAC for the devices. Must be HHHH.HH format: dca6.32
+VLAN would you like the devices to be in: 37
+Searching for MAC addresses...
+
+Found these interfaces:
+['Fa2/0/9']
+
+Fa2/0/9
+Modifying, please wait...
+Done!
+
+Writing to memory, please wait...
+
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa2/0/1, Fa2/0/2, Fa2/0/3
+                                                Fa2/0/4, Fa2/0/5, Fa2/0/6
+                                                Fa2/0/7, Fa2/0/8, Fa2/0/10
+                                                Fa2/0/11, Fa2/0/12, Fa2/0/13
+                                                Fa2/0/14, Fa2/0/15, Fa2/0/16
+                                                Fa2/0/17, Fa2/0/18, Fa2/0/19
+                                                Fa2/0/20, Fa2/0/21, Fa2/0/22
+                                                Fa2/0/23, Fa2/0/24, Gi2/0/1
+                                                Gi2/0/2
+37   VLAN0037                         active    Fa2/0/9
+48   nornir_test                      active
+50   test                             active
+51   test2                            active
+1002 fddi-default                     act/unsup
+1003 token-ring-default               act/unsup
+1004 fddinet-default                  act/unsup
+1005 trnet-default                    act/unsup
+
+
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
